@@ -1,0 +1,12 @@
+/* *** *** FOOTER *** *** */
+
+/* full footer container */
+.footer {
+    height:100px;
+    box-sizing: border-box;
+}
+
+.footer-copy {
+    border: 3px solid rebeccapurple;
+    text-align: center;
+}

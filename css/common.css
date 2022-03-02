@@ -1,0 +1,74 @@
+/* *** *** COMMON *** *** */
+
+* {
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-decoration: none;
+	overflow: visible;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--black);
+/*	color: transparent;
+	text-shadow: 0px 0px 1px rgba(0,0,0,1); /* text blur */
+}
+
+.logo {
+		font-family: 'Shrikhand', sans-serif;
+}
+
+h1 { font-size: 32px; }
+h2 { font-size: 24px; }
+h3 { font-size: 15px; }
+h4 { font-size: 13px; }
+h5 { font-size: 11px; }
+h6 { font-size: 9.5px; }
+
+a:link, a:visited { color: var(--black); }
+a:hover { color: var(--blue); }
+
+
+body {
+/*	border: 3px solid red;*/
+	display: flex;
+	flex-direction: column;
+	width: 375px;
+	height: 100vh;
+	box-sizing: border-box;
+	margin: auto;
+}
+
+.body {
+    flex-grow: 1;
+}
+
+.header,
+.footer {
+    flex-shrink: 0;
+}
+
+header {
+/*	border: 3px solid rgb(202, 181, 16);*/
+}
+
+main {
+/*	border: 3px solid rgb(36, 25, 248);*/
+	height: calc(100vh - 40px);
+	box-sizing: border-box;
+}
+
+footer {
+	border: 3px solid rgb(30, 142, 182);
+	margin-top: auto;
+}
