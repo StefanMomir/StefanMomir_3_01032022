@@ -1,0 +1,126 @@
+/* *** *** SUBMENU *** *** */
+.submenu {
+/*  border: 3px solid rgb(30, 142, 182);*/
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    justify-content:center;
+    box-sizing: border-box;
+    height: fit-content;
+    background-color: var(--white);
+    margin-top: 2px;
+}
+
+.smenu-title {
+    padding:47px 0 4px 18px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.button{
+/*   border: 3px solid rgb(30, 142, 182);*/
+    display: flex;
+    width: 100%;
+    margin: auto !important;
+    box-sizing: border-box;
+    width:fit-content;
+    padding: 35px 0 53px 0;
+}
+
+
+.sm-cho-resto,
+.sm-menu-resto,
+.sm-deg-resto {
+    border: none;
+    position: relative;
+    display: flex;
+    background-color: var(--lightgray);
+    font-family: var(--robo);
+    font-weight: 600;
+    height: 70px;
+    width:87%;
+    border-radius: 20px 20px 20px 20px;
+    margin: auto;
+    line-height: 70px;
+    box-shadow: var(--box-shadow-right);
+    left:5px;
+}
+
+.sm-cho-resto .fa-mod,
+.sm-menu-resto  .fa-mod,
+.sm-deg-resto .fa-mod {
+    font-size: 20px;
+    padding-left: 35px;
+    padding-right: 15px;
+}
+
+.sm-menu-resto  .fa-mod,
+.sm-deg-resto .fa-mod {
+       font-size: 17px;
+}
+
+
+.sm-cho-resto a,
+.sm-menu-resto a,
+.sm-deg-resto a {
+    /*border: 3px solid rgb(182, 30, 30);*/
+    border-radius: 20px 20px 20px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.sm-cho-resto a:active,
+.sm-menu-resto a:active,
+.sm-deg-resto a:active,
+.sm-cho-resto a:active,
+.sm-menu-resto a:active,
+.sm-deg-resto a:active,
+.sm-cho-resto a:hover,
+.sm-menu-resto a:hover,
+.sm-deg-resto  a:hover {
+  /*  border: 3px solid rgb(55, 182, 30);*/
+    border-radius: 20px 20px 20px 20px;
+    width: 100%;
+    background-color: var(--hover-rose);
+    box-sizing: border-box;
+}
+
+
+.sm-cho-resto .fa-mod { padding-left: 40px; }
+
+.sm-cho-resto a i,
+.sm-menu-resto a i,
+.sm-deg-resto a i {
+    color: var(--textgray);
+    border-radius: 20px 20px 20px 20px;
+}
+
+.sm-cho-resto a:hover i,
+.sm-menu-resto a:hover i,
+.sm-deg-resto a:hover i {
+    border-radius: 20px 20px 20px 20px;
+    color: var(--magenta);
+}
+
+.sm-number {
+    position: relative;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background-color: var(--magenta);
+    z-index:1;
+     top:48px;
+     left:20px;
+     text-align: center;
+}
+
+.sm-number p{ 
+    position: inherit;
+    top:6px;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 14px;
+
+}

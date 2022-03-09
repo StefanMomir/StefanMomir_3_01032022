@@ -1,0 +1,126 @@
+/* *** *** MAIN *** *** */ 
+main {
+    background-color: var(--lightgray);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin-top: 68px;
+    padding-bottom: 45px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+/* middle container wrapper */
+.article .text-title {
+    font-weight: 900;
+    padding-bottom: 23px;
+    padding-top: 33px;
+    position: relative;
+    width: 100% ;
+}
+
+.text-title h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* full figure container */
+.article figure {
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: var(--box-shadow-light);
+    box-sizing: border-box;
+    display: flex;
+    flex-flow:column wrap;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 20px;
+    width:330px;
+  }
+
+.middle-card-img img {
+  /*    border: 2px solid red;*/
+    border: 0;
+    background-color: var(--white);
+    display: flex;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    width: 330px;
+    height: 175px;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+}
+
+.article .figcaption {
+    color: var(--black);
+    width:100%;
+    border-radius: 0px 0px 15px 15px;
+    width: 330px;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 15px 0 0 15px ;
+}
+
+.resto-container {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.resto-title {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.resto-subtitle {
+    position: relative;
+    font-size: 17px;
+    font-weight: 300;
+    top:-1px;
+  }
+
+    /* heart like animation */
+.one {
+    position: relative;
+    z-index: 2;
+    float: right;
+    letter-spacing: -24px;
+    font-size: 25px;
+    top:3px;
+}
+
+.two {
+    z-index: 1;
+    position: relative;
+    float: right;
+    padding-right: 20px;
+    color: transparent;
+    font-size: 27px;
+    line-height: 27px;
+    top:3px;
+}
+
+.two:hover {
+    position: relative;
+    left: -2px;
+    font-size: 27px;
+    line-height: 27px;
+    z-index: 3;
+    cursor: pointer;
+    background: linear-gradient(-20deg,white, transparent, var(--magenta), var(--rose));
+    background-size: 600%;
+    -webkit-background-clip: text;
+    animation: anime 2s linear 1;
+}
+
+@keyframes anime {
+  0% { background-position: 100% 70%; }
+  50% { background-position: 70% 50%; }
+  75% { background-position: 50% 30%; }
+  100% { background-position: 30% 0; }
+ 
+}
+/*---------end animation----------*/

@@ -1,0 +1,230 @@
+/* *** *** RESTO MAIN PAGE *** *** */
+
+/* Main Page */
+main{
+    all: unset;
+}
+
+/* Main Content */
+.main-container {
+background-color: var(--lightgray);
+}
+
+/* Main Wrapper */
+.resto-wrapper {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    justify-content:center;
+    box-sizing: border-box;
+    height: fit-content;
+    background-color: var(--white);
+    border-radius: 40px 40px 0 0;
+    top:-30px;
+    background-color: var(--lightgray);
+}
+
+/*resto name wrapper */
+.r-wrapper {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Resto Name */
+.resto-name-title {
+    display: flex;
+    width: 80%;
+    box-sizing: border-box;
+    font-family: var(--shrik);
+    font-size: 27px;
+    font-weight: 500;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 35px 0 35px 20px;
+}    
+
+/* Resto Heart Icon TOP */
+.resto-heart {
+
+    display: flex;
+    position:relative;
+    width: fit-content;
+    left:13px;
+    top:35px;
+    font-weight: 100;
+    float: right;
+}
+
+  /* heart like animation */
+  .rone {
+    position: relative;
+    z-index: 2;
+    letter-spacing: -24px;
+    font-size: 24px;
+}
+
+.rtwo {
+    z-index: 1;
+    position: relative;
+    color: transparent;
+    line-height: 24px;
+}
+
+.rtwo:hover {
+    float: right;
+    position: relative;
+    top:0px;
+    left:-1px;
+    font-size: 26px;
+    line-height: 26px;
+    z-index: 3;
+    cursor: pointer;
+    background: linear-gradient(-20deg,white, transparent, var(--magenta), var(--rose));
+    background-size: 600%;
+    -webkit-background-clip: text;
+    animation: anime 2s linear 1;
+}
+
+@keyframes anime {
+  0% { background-position: 100% 70%; }
+  50% { background-position: 70% 50%; }
+  75% { background-position: 50% 30%; }
+  100% { background-position: 30% 0; }
+ 
+}
+/*---------end animation----------*/
+
+/* Food Category */
+.food-cat {
+    position: relative;
+    left:20px;
+    width:42px ;
+    padding:0 0 4px 0;
+    border-bottom: 3px solid var(--cyan);
+    margin-bottom: 14px; 
+}
+
+/* Food Menu */
+.food-menu {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: var(--white);
+    font-family: var(--robo);
+    font-weight: 500;
+    width:fit-content;
+    border-radius: 16px;
+    margin: auto;
+    box-shadow: var(--box-shadow-light);
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    height: 70px;
+}
+
+/* food categories 2,3 padding-top */
+.food-cat.m2, .food-cat.m3 {margin-top: 35px;}
+
+/* Food Menu Wrapper */
+.food-menu {
+    display: flex;
+    width: 350px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    /*cursor: pointer;
+    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;*/
+}
+
+/* Food Menu Name */
+.menu-name {
+    width: 280px;
+    box-sizing: border-box;
+    margin: auto;
+    padding-left: 4px;
+    padding-top: 4px;
+    line-height: 26px;
+
+}
+
+/* Food Menu Second Name */
+.submenu-name {
+    font-size: 15px;
+    font-weight: 400;
+    width: 220px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Food Menu Price */
+.menu-price {
+    position: relative;
+    font-size: 15px;
+    font-weight: 700;
+    padding-right: 10px;
+    width: 40px;
+    box-sizing: border-box;
+    margin: auto;
+    top:13px;
+}
+
+.pr-wrapper {
+    display: flex;
+    position: relative;
+    width: 100%;
+    cursor: pointer;  
+}
+
+/* Hover Menu Price Check */
+.pr-wrapper:hover .menu-price::after {
+    position: relative;
+    background-color: var(--cyan);
+    font-family: var(--foawe);
+    z-index: 1;
+    color: var(--white);
+    position: relative;
+    content: '\f058';
+    left: 10px;
+    top: -13px;
+    padding: 25px 21px 26px 20px;
+    border-radius: 0 16px 16px 0px;
+    font-size: 22px;
+    box-sizing: border-box;
+    box-shadow: var(--button-shadow-light);
+}
+
+/* price hover 2,3 padding 
+.mod2 {padding-top: 0px;}
+.mod3 {padding-top: 0px;}
+*/
+
+/* Hover Menu Price */
+.pr-wrapper:hover .menu-price {
+    opacity: 1;
+    left: -50px;
+    transition: all 500ms ease-in;   
+}
+
+.resto-slides {
+    position: relative;
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+ }
+  
+@keyframes slidein {
+    from {
+        margin-top:100%;  
+        width:100%
+    }
+
+    to {
+        margin-top:0%;
+        width:100%;
+    }
+}
+

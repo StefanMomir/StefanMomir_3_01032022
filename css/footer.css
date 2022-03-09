@@ -2,11 +2,70 @@
 
 /* full footer container */
 .footer {
-    height:100px;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    bottom: 0;
+    width:100%;
+    height: fit-content;
+    background-color: var(--darkgray);
+    color: var(--white);
+    margin: auto;
     box-sizing: border-box;
 }
 
-.footer-copy {
-    border: 3px solid rebeccapurple;
+/* full footer container */
+.footer-logo {
+}
+
+/* full footer container */
+.footer-logo img {
+    padding: 25px 0 14px 25px;
+    filter:invert(100%);
+    width: 125px;
+    box-sizing: border-box;
+}
+
+/* full footer container */
+.footer-content {
+    display: flex;
+    flex-flow: column wrap;
+    width: fit-content;
+    line-height: 26px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+/* full footer container */
+.footer-content a {
+    color: var(--white);
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* full footer container */
+.fa-m1,
+.fa-m2 {
+    padding: 0 10px 0 21px;
+    font-size: 12px;
+}
+
+.fa-m1 {
+    padding: 0 11px 0 24px;
+}
+
+/* full footer container */
+.f-legal, .f-contact {
+    padding: 0 10px 0 21px;
+}
+
+/* full footer container */
+.f-copy {
+    color: rgb(184, 184, 184); 
+    width: 100%;
+    line-height: 18px;
+    font-family: var(--robo);
+    font-size: 10px;
     text-align: center;
+    box-sizing: border-box;
 }

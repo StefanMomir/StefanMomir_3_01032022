@@ -19,18 +19,17 @@ h3,
 h4,
 h5,
 h6 {
+
+	font-family: var(--robo);
 	color: var(--black);
 /*	color: transparent;
 	text-shadow: 0px 0px 1px rgba(0,0,0,1); /* text blur */
 }
 
-.logo {
-		font-family: 'Shrikhand', sans-serif;
-}
 
 h1 { font-size: 32px; }
-h2 { font-size: 24px; }
-h3 { font-size: 15px; }
+h2 { font-size: 18px; }
+h3 { font-size: 17px; }
 h4 { font-size: 13px; }
 h5 { font-size: 11px; }
 h6 { font-size: 9.5px; }
@@ -38,24 +37,15 @@ h6 { font-size: 9.5px; }
 a:link, a:visited { color: var(--black); }
 a:hover { color: var(--blue); }
 
+ul {list-style-type: none;}
 
 body {
-/*	border: 3px solid red;*/
 	display: flex;
 	flex-direction: column;
 	width: 375px;
-	height: 100vh;
 	box-sizing: border-box;
-	margin: auto;
-}
-
-.body {
-    flex-grow: 1;
-}
-
-.header,
-.footer {
-    flex-shrink: 0;
+	margin: auto !important;
+	background-color: var(--white);
 }
 
 header {
@@ -63,12 +53,137 @@ header {
 }
 
 main {
-/*	border: 3px solid rgb(36, 25, 248);*/
+/*	border: 3px solid rgb(36, 25, 248);
 	height: calc(100vh - 40px);
-	box-sizing: border-box;
+	box-sizing: border-box;*/
 }
 
 footer {
-	border: 3px solid rgb(30, 142, 182);
-	margin-top: auto;
+/*	border: 3px solid rgb(30, 142, 182);*/
+	display: flex;
+	width: fit-content;
+	box-sizing: border-box;
+	background-color: var(--lightgray);
 }
+
+button {
+    box-shadow: var(--box-shadow);
+} 
+
+button:hover {
+	box-shadow: var(--box-shadow-hover);
+	opacity: 0.9;
+} 
+
+
+
+/* ----- LOADING ANIMATION ----- */
+
+
+/*---- full background nonclickable ----*/
+.wrapper {
+	display: flex;
+	flex-flow: column wrap;
+	position:relative;
+	z-index: 1 !important;
+	pointer-events: none;
+	box-sizing: border-box;
+	background-color: rgba(0,0,0,0.7) !important;
+}
+
+/*---- full background loading opacity timeout ----*/
+.container-loading {
+	z-index: -1 !important;
+	position: relative;
+	justify-content: center;
+	opacity: 0.3;
+	animation-delay: 4s;
+	animation-fill-mode: forwards;
+	animation-duration: 1ms;
+	animation-name: bg-opacity;
+	box-sizing: border-box;
+	margin: auto;
+	width:100%;	
+	background-color: rgba(255, 255, 255, 1) !important;
+}
+
+@keyframes bg-opacity {
+	from { 
+		opacity: 0;
+	  }
+	to {
+		  opacity: 1;
+		  display:contents;
+		  pointer-events:all;
+	  }
+  }
+
+/*---- hide loading element on timeout ----*/
+.hide-timeout  {
+	background-color: white;
+	opacity: 1;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+	animation-duration: 1ms;
+	animation-name: hide-on-timeout;
+}
+
+@keyframes hide-on-timeout {
+	from { 
+		opacity: 1; 
+		display: contents; 
+	}
+	to { 
+		opacity: 0; 
+		display:none; 
+	}
+}
+
+/*---- Rotating balls animation ----*/
+#round-ball {
+	display: block;
+	position: absolute;
+	top: 10%;
+	left: 55%;
+	height: 50px;
+	width: 20px;
+	margin: -25px 0 0 -25px;
+	animation: balls-rotate 2.0s infinite linear;
+}
+
+#round-ball span:nth-child(1) {
+	top: auto;
+	bottom: 0;
+	animation-delay: -1.0s;
+	background-color:  var(--cyan);
+  }
+
+
+@keyframes balls-rotate {
+	100% {
+		transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+/*---- Balls Bounce animation ----*/
+ #round-ball span {
+	width: 30px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	background-color:  var(--rose);
+	border-radius: 50%;
+	animation: ball-bounce 2.0s infinite ease-in-out;
+}
+
+@keyframes ball-bounce {
+	0%, 100% {
+		transform: scale(0);
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(1);
+		transform: scale(1);
+	}
+  }
