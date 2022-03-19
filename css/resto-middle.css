@@ -5,9 +5,10 @@ main{
     all: unset;
 }
 
+
 /* Main Content */
 .main-container {
-background-color: var(--lightgray);
+    background-color: var(--lightgray);
 }
 
 /* Main Wrapper */
@@ -33,7 +34,7 @@ background-color: var(--lightgray);
 }
 
 /* Resto Name */
-.resto-name-title {
+.resto-name {
     display: flex;
     width: 80%;
     box-sizing: border-box;
@@ -45,170 +46,19 @@ background-color: var(--lightgray);
     padding: 35px 0 35px 20px;
 }    
 
-/* Resto Heart Icon TOP */
+/* Resto Heart Icon Position */
 .resto-heart {
-
+    position: relative;
     display: flex;
-    position:relative;
     width: fit-content;
-    left:13px;
-    top:35px;
-    font-weight: 100;
-    float: right;
+    height: fit-content;
+    left: 8px;
+    top:30px;
 }
 
-  /* heart like animation */
-  .rone {
-    position: relative;
-    z-index: 2;
-    letter-spacing: -24px;
-    font-size: 24px;
-}
-
-.rtwo {
-    z-index: 1;
-    position: relative;
-    color: transparent;
-    line-height: 24px;
-}
-
-.rtwo:hover {
-    float: right;
-    position: relative;
-    top:0px;
-    left:-1px;
-    font-size: 26px;
-    line-height: 26px;
-    z-index: 3;
-    cursor: pointer;
-    background: linear-gradient(-20deg,white, transparent, var(--magenta), var(--rose));
-    background-size: 600%;
-    -webkit-background-clip: text;
-    animation: anime 2s linear 1;
-}
-
-@keyframes anime {
-  0% { background-position: 100% 70%; }
-  50% { background-position: 70% 50%; }
-  75% { background-position: 50% 30%; }
-  100% { background-position: 30% 0; }
- 
-}
-/*---------end animation----------*/
-
-/* Food Category */
-.food-cat {
-    position: relative;
-    left:20px;
-    width:42px ;
-    padding:0 0 4px 0;
-    border-bottom: 3px solid var(--cyan);
-    margin-bottom: 14px; 
-}
-
-/* Food Menu */
-.food-menu {
-    position: relative;
-    display: flex;
-    flex-flow: row nowrap;
-    background-color: var(--white);
-    font-family: var(--robo);
-    font-weight: 500;
-    width:fit-content;
-    border-radius: 16px;
-    margin: auto;
-    box-shadow: var(--box-shadow-light);
-    box-sizing: border-box;
-    margin-bottom: 15px;
-    height: 70px;
-}
-
-/* food categories 2,3 padding-top */
-.food-cat.m2, .food-cat.m3 {margin-top: 35px;}
-
-/* Food Menu Wrapper */
-.food-menu {
-    display: flex;
-    width: 350px;
-    font-size: 18px;
-    box-sizing: border-box;
-    border-radius: 16px;
-    /*cursor: pointer;
-    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;*/
-}
-
-/* Food Menu Name */
-.menu-name {
-    width: 280px;
-    box-sizing: border-box;
-    margin: auto;
-    padding-left: 4px;
-    padding-top: 4px;
-    line-height: 26px;
-
-}
-
-/* Food Menu Second Name */
-.submenu-name {
-    font-size: 15px;
-    font-weight: 400;
-    width: 220px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;
-}
-
-/* Food Menu Price */
-.menu-price {
-    position: relative;
-    font-size: 15px;
-    font-weight: 700;
-    padding-right: 10px;
-    width: 40px;
-    box-sizing: border-box;
-    margin: auto;
-    top:13px;
-}
-
-.pr-wrapper {
-    display: flex;
-    position: relative;
-    width: 100%;
-    cursor: pointer;  
-}
-
-/* Hover Menu Price Check */
-.pr-wrapper:hover .menu-price::after {
-    position: relative;
-    background-color: var(--cyan);
-    font-family: var(--foawe);
-    z-index: 1;
-    color: var(--white);
-    position: relative;
-    content: '\f058';
-    left: 10px;
-    top: -13px;
-    padding: 25px 21px 26px 20px;
-    border-radius: 0 16px 16px 0px;
-    font-size: 22px;
-    box-sizing: border-box;
-    box-shadow: var(--button-shadow-light);
-}
-
-/* price hover 2,3 padding 
-.mod2 {padding-top: 0px;}
-.mod3 {padding-top: 0px;}
-*/
-
-/* Hover Menu Price */
-.pr-wrapper:hover .menu-price {
-    opacity: 1;
-    left: -50px;
-    transition: all 500ms ease-in;   
-}
-
+/* Resto Slider Animation */
 .resto-slides {
+    box-sizing: border-box;
     position: relative;
     animation-duration: 2s;
     animation-name: slidein;
@@ -228,3 +78,352 @@ background-color: var(--lightgray);
     }
 }
 
+/* Food Menu CAT */
+.food-menu {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: var(--robo);
+    width:fit-content;
+    border-radius: 16px;
+    margin: auto;
+    box-sizing: border-box;
+    width: 350px;
+    font-weight: 500;
+}
+
+/* Food Menu */
+.food-menu .food-cat {
+    font-size: 16px;
+    font-weight: 400;
+    width:42px ;
+    padding:0 0 4px 0;
+    margin-left: 8px;
+    border-bottom: 3px solid var(--cyan);
+    margin-bottom: 15px; 
+}
+
+/* food categories 2,3 padding-top */
+.plats {margin-top: 20px;}
+.dessert {margin-top: 30px;}
+
+/* Menu Container */
+.menu-container {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: var(--robo);
+    width:fit-content;
+    border-radius: 16px;
+    margin: auto;
+    box-shadow: var(--box-shadow-light);
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-size: 18px;
+    width: 350px;
+}
+
+/* Menu Wrapper */
+.menu-wrapper {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 70px; 
+    background-color: var(--white);
+    border-radius: 16px 16px 16px 16px;
+}
+
+/* Menu Name */
+.menu-name {
+    white-space:nowrap; 
+    overflow:hidden;
+    text-overflow:ellipsis;
+    height:fit-content;
+    box-sizing: border-box;
+    padding: 13px 0 0 10px;
+    height: 100%;
+    font-size: 18px;
+}
+
+/* Menu Details */
+.menu-details { 
+    position:absolute;
+    white-space:nowrap; 
+    overflow:hidden;
+    text-overflow:ellipsis;
+    box-sizing: border-box;
+    padding: 39px 10px 0 10px;  
+    height: 100%;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* Menu Details Wrapper --> */
+.menu-textwrap {
+    position: absolute;
+    width: 85%;
+    left: 0%;
+    height:100%;
+    box-sizing: border-box;
+    transition: 600ms;
+    left:2px;
+}
+
+/* --> Menu Details Wrapper on Hover */
+.menu-wrapper:hover .menu-textwrap {  
+    position: absolute;
+    width:65%;
+    cursor: pointer;  
+}    
+
+/* Slide Block */
+.sm-slide {
+    display: flex;
+    position: relative;
+    left: 86.5%;
+    transition: 600ms;
+    box-sizing: border-box;
+    border-radius: 0 16px 16px 0px;
+}
+
+/* Slide Price */
+.sm-slide .sm-price {   
+    width: 58px;
+    padding: 40px 0 0 0;
+    font-size: 15px;
+    font-weight: 700;
+}
+    
+/* Slide Validate Icon */
+.sm-slide .sm-icon  {
+    width: 70px;
+    padding: 24px 0 0 20px;
+    background-color: var(--cyan);
+    font-size: 21px;
+    color: var(--white);
+
+}
+
+/* Slide on Hover */
+.menu-wrapper:hover .sm-slide {  
+    transition: 900ms;
+    left: 66%;
+    cursor: pointer;  
+}
+
+/* Validate icon rotate */
+.menu-wrapper:hover .sm-icon i {
+    transform: rotate(360deg);
+    transition: 500ms all linear;
+}
+
+/* Resolution <= 320px  */
+@media screen and ( max-width:320px ) {
+
+    .back-arrow {
+        margin-left:20px;
+    }
+    
+    /* Food Menu Wrapper */
+    .food-menu { 
+        width: 90% !important; 
+    }
+
+    /* Resto Name */
+    .resto-name {
+        width: 82%;
+        font-size: 20px; 
+        padding: 35px 0 35px 18px;
+    }
+
+    .sm-price {
+        margin-left: 20px;
+    }
+
+    /* Slide Block */
+    .sm-slide {
+        transition: 500ms;
+        right:100%;
+        left:80%;
+    }
+
+    /* Menu Details Wrapper --> */
+    .menu-details {
+        margin-right: 30px;
+    }
+
+    /* Slide on Hover */
+    .menu-wrapper:hover .sm-slide {  
+        transition: 800ms;
+        left: 53%;
+    }
+
+    /* Slide Validate Icon */
+    .sm-slide .sm-icon  {
+        padding: 25px 0 0 18px;
+    }
+}
+
+/* Tablette,  PC/Notebook  */
+@media screen and (min-width:569px) and (max-width:996px ) {
+   
+    /* Resto Name */
+    .resto-name {
+        width: 90%; 
+        padding: 35px 0 35px 40px;
+    }
+
+    /* Menu Container */
+    .menu-container {
+        font-weight: 500;
+        width:fit-content;
+        font-size: 18px;
+        width: 600px;
+    }
+
+    /* Food Menu Wrapper */
+    .food-menu { 
+        width: 600px;
+    }
+
+    /* Slide Block */
+    .sm-slide {
+        transition: 500ms;
+        right:100%;
+        left:93%;
+    }
+
+    /* Slide on Hover */
+    .menu-wrapper:hover .sm-slide {  
+        transition: 800ms;
+        left: 80%;
+    }
+}
+
+
+/*  PC Resolution 1024px */
+@media screen and (min-width:997px) and (max-width: 1300px ) {
+
+    /* Resto Name */
+    .resto-name {
+        width: 94%; 
+        padding: 35px 0 35px 22px;
+    }   
+
+    /* Full Categories Container */
+    .resto-menu {
+        /*border: 2px solid red;*/
+        width: 100%;
+        position: relative;
+        display:flex;
+        height: 20%;
+        margin: auto;
+        box-sizing: border-box;
+        background-color: transparent;
+        padding:0 10px 0 10px;
+    }
+
+    /* Category Container */
+    .resto-module {
+        /*border: 2px solid red;*/
+        width: 100%;
+        margin: auto;
+        height: fit-content;
+        box-sizing: border-box;
+        margin:0 10px 0 10px;
+        background-color: transparent;
+    }
+
+    /* reset margin */
+    .entree, .plats, .dessert { margin-top: 0; }
+
+    /* Food Menu Wrapper */
+    .food-menu { 
+        width: 310px;
+    }
+
+    /* Slide on Hover */
+    .menu-wrapper:hover .sm-slide { left: 190px; }
+}
+
+
+/* HD Resolution */
+@media screen and (min-width:1301px) {
+
+    /* reset margin */
+    .entree, .plats, .dessert { margin-top: 0; }
+
+    /* Resto Name */
+    .resto-name {
+        width: 100%; 
+        padding: 35px 0 35px 40px;
+    }    
+    
+    /* Full Categories Container */
+    .resto-menu {
+        /*border: 2px solid red;*/
+        width: 100%;
+        position: relative;
+        display:flex;
+        height: 20%;
+        margin: auto;
+        box-sizing: border-box;
+        background-color: transparent;
+        padding:0 10px 0 10px;
+    }
+
+    /* Category Container */
+    .resto-module {
+        /*border: 2px solid red;*/
+        width: 100%;
+        margin: auto;
+        height: fit-content;
+        box-sizing: border-box;
+        margin:0 10px 0 10px;
+        background-color: transparent;
+    }
+
+    /* Resto Heart Icon Position */
+    .resto-heart {
+        position: relative;
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        left: 8px;
+        top:30px;
+    }
+    
+   /* Resto Name */
+   .resto-name {
+        width: 96%; 
+        padding: 35px 0 35px 40px;
+    }
+
+    /* Menu Container */
+    .menu-container {
+        font-weight: 500;
+        width:fit-content;
+        font-size: 18px;
+        width: 600px;
+    }
+
+    /* Food Menu Wrapper */
+    .food-menu { 
+        width: 410px;
+    }
+
+    /* Slide Block */
+    .sm-slide {
+        left: 90%;
+    }
+
+    /* Slide Price */
+    .sm-slide .sm-price {   
+        width: 50px;
+    }
+    /* Slide on Hover */
+    .menu-wrapper:hover .sm-slide {  
+        left: 73%;
+    }
+}

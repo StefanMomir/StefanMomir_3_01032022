@@ -24,6 +24,7 @@ button.page {
     color: var(--white);
     border-radius: 30px 30px 30px 30px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent !important; 
 } 
 
 button:hover {

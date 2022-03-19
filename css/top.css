@@ -93,3 +93,27 @@ button.resto  {
     border: none;
     cursor: pointer;
 }
+
+@media screen and (max-width:321px)
+{
+    p.text-light { width:90%; }
+}
+
+@media screen and (min-width:400px)
+{
+    p.text-light { width:90%; }
+}
+
+@media screen and (min-width:576px) and (max-width: 768px ) 
+{
+    p.text-bold { width: 100%; }
+    p.text-light { width:100%; }
+}
+
+
+/*  PC Resolution over 1024px */
+@media screen and (min-width:769px)  and (max-width: 2560px )
+{
+    p.text-bold { width: 100%; }
+    p.text-light { width:100%; }
+}    

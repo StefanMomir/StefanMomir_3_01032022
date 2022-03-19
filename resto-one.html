@@ -10,8 +10,13 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <script src="https://kit.fontawesome.com/7820457299.js" crossorigin="anonymous"></script>
    </head>
+   
    <body class="body">
-      <!--//********** HEADER **********//-->           
+      
+   <!--// ********** MAIN PAGE WRAPPER ********** //-->
+   <div id="main-resto-wrapper">
+
+         <!--//********** HEADER **********//-->           
       <header class="header">
          <div class="logo-image-resto"><a href="index.html"><span class="back-arrow"><i class="fas fa-arrow-left"></i></span>
             <object data="images/logo/ohmyfood@2x.svg" type="image/svg+xml">
@@ -19,6 +24,8 @@
             </object></a>
          </div>
       </header>
+       <!--// end.Header //-->
+
       <!--//********** TOP **********//-->
       <div class="resto-top">
          <div class="resto-image">
@@ -26,140 +33,222 @@
          </div>
       </div>
       <!--// end.TOP //-->
+
       <!--//********** MAIN CONTAINER **********//-->
       <div class="main-container">
          <div class="resto-wrapper">
-            <!--// Resto Name //-->
+
+            <!--// Resto Name Container //-->
             <div class="r-wrapper">
-               <div class="resto-name-title">La palette du goûte</div>
+               <div class="resto-name">La palette du goût</div>
                <div class="resto-heart">
-                  <div class="rone"><i class="far fa-heart"></i></div>
-                  <div class="rtwo"><i class="fa fa-heart"></i></div>
+                     <div class="ht"><span class="fa fa-heart"></span></div>
                </div>
-            </div>
+            </div><!--// end.RNContainer //-->
+
             <!--// FULL RESTO MENUS //-->
             <div class="resto-menu">
-               <!--// Entree //-->
+            <!--// Entree //-->
+
+            <div class="resto-module">
+               <!--/ Slide 1 /-->
+               
                <div class="resto-slides">
-                  <div class="food-cat"><span class="food-cat-text">ENTREES</span></div>
-                  <div class="food-menu">
-                     <div class="pr-wrapper">
-                        <div  class="menu-name">
-                           <p>Fricassée d'escargot</p>
-                           <p class="submenu-name">Au piment d'Espelette</p>
-                        </div>
-                        <span class="menu-price">25&euro;</span>
-                     </div>
-                  </div>
-               </div>
-               <div class="resto-slides">
-                  <div class="food-menu">
-                     <div class="pr-wrapper">
-                        <div  class="menu-name">
-                           <p>Foie gras de canard mi-cuit</p>
-                           <p class="submenu-name">Et ses copeaux de truffe noire</p>
-                        </div>
-                        <span class="menu-price">35&euro;</span>
-                     </div>
-                  </div>
-               </div>
-               <div class="resto-slides">
-                  <div class="food-menu">
-                     <div class="pr-wrapper">
-                        <div  class="menu-name">
-                           <p>Oeuf au plat</p>
-                           <p class="submenu-name">Assaisonné à la truffe sur lit de caviar</p>
-                        </div>
-                        <span class="menu-price">20&euro;</span>
-                     </div>
-                  </div>
-               </div>
-               <!--// end.Entree //-->
-               <!--// Plats //-->
-               <div class="resto-slides">
-                  <div class="food-cat m2">PARTS</div>
-                  <div class="food-menu">
-                     <div class="pr-wrapper">
-                        <div  class="menu-name">
-                           <p>Filet de boeuf aux herbes</p>
-                           <p class="submenu-name">Accompagné de sa ribambelle de légumes</p>
-                        </div>
-                        <span class="menu-price">40&euro;</span>
-                     </div>
-                  </div>
-               </div>
+                     <div class="food-menu">
+                        <div class="food-cat">ENTREES</div>
+                     </div><!--// end.foodmenu //-->
+                     <div class="food-menu">
+                     <div class="menu-container">
+                           <div class="menu-wrapper">                               
+                               <div class="menu-textwrap">
+                                 <div class="menu-name">Fricassée d'escargot</div>
+                                   <div class="menu-details">Au piment d'Espelette </div>
+                               </div>
+                               <div class="sm-slide">
+                                 <div class="sm-price">23&euro;</div>
+                                 <div class="sm-icon"><i class="fas fa-check-circle check"></i></div>
+                              </div>
+                         </div><!--// end.wrapper //-->
+                     </div><!--// end.container //-->
+                  </div><!--// end.foodmenu //-->
+               </div><!--// end.slide //-->
+
+               <!--/ Slide 2 /-->
                <div class="resto-slides">
                   <div class="food-menu">
-                     <div class="pr-wrapper">
-                        <div  class="menu-name">
-                           <p>Parmentier de queue de boeuf</p>
-                           <p class="submenu-name">À la truffe noire sur sa purée de panais</p>
-                        </div>
-                        <span class="menu-price mod">35&euro;</span>
-                     </div>
-                  </div>
-               </div>
-               <div class="resto-slides">
-                  <div class="food-menu mod2">
-                     <div class="pr-wrapper">
-                        <div  class="menu-name">
-                           <p>Filet de turbot</p>
-                           <p class="submenu-name">Aux agrumes</p>
-                        </div>
-                        <span class="menu-price mod">44&euro;</span>
-                     </div>
-                  </div>
-               </div>
-               <!--// end.Plats //-->
-               <!--// Desserts //-->
-               <div class="resto-slides">
-                  <div class="food-cat m3">DESSERTS</div>
-                  <div class="food-menu mod3">
-                     <div class="pr-wrapper">
-                        <div  class="menu-name">
-                           <p>Paris-Brest</p>
-                           <p class="submenu-name">Revisité</p>
-                        </div>
-                        <span class="menu-price mod">18&euro;</span>
-                     </div>
-                  </div>
-               </div>
+                     <div class="menu-container">
+                           <div class="menu-wrapper">
+                               <div class="menu-textwrap">
+                                 <div class="menu-name">Foie gras de canard mi-cuit</div>
+                                 <div class="menu-details">Et ses copeaux de truffe noire </div>
+                               </div>
+                               <div class="sm-slide">
+                                 <div class="sm-price">35&euro;</div>
+                                 <div class="sm-icon"><i class="fas fa-check-circle check"></i></div>
+                              </div>
+                         </div><!--// end.wrapper //-->
+                     </div><!--// end.container //-->
+                  </div><!--// end.foodmenu //-->
+               </div><!--// end.slide //-->
+
+               <!--/ Slide 3 /-->
                <div class="resto-slides">
                   <div class="food-menu">
-                     <div class="pr-wrapper">
-                        <div  class="menu-name">
-                           <p>Macaron au chocolat d'exception</p>
-                           <p class="submenu-name">Et glace à la vanille de Madagascar</p>
-                        </div>
-                        <span class="menu-price mod">22&euro;</span>
-                     </div>
-                  </div>
-               </div>
-               <div class="resto-slides">
-                  <div class="food-menu">
-                     <div class="pr-wrapper">
-                        <div  class="menu-name">
-                           <p>Mousse au chocolat </p>
-                           <p class="submenu-name">Au piment d'Espelette et à la truffe noire</p>
-                        </div>
-                        <span class="menu-price mod">23&euro;</span>
-                     </div>
-                  </div>
-               </div>
-               <!--// end.Desserts //-->
+                     <div class="menu-container">
+                           <div class="menu-wrapper">
+                             <div class="menu-textwrap">
+                                 <div class="menu-name">Oeuf au plat</div>
+                                 <div class="menu-details">Assaisonné à la truffe sur lit de caviar </div>
+                              </div>
+                              <div class="sm-slide">
+                                <div class="sm-price">20&euro;</div>
+                                <div class="sm-icon"><i class="fas fa-check-circle check"></i></div>
+                             </div>
+                        </div><!--// end.wrapper //-->
+                    </div><!--// end.container //-->
+                 </div><!--// end.foodmenu //-->
+              </div><!--// end.slide //-->
+            <!--// end.Entree //-->
             </div>
-            <!--// end.FULL RESTO //-->
-         </div>
-         <!--// end.RESTO WRAPPER //-->
+
+            <div class="resto-module">
+            <!--// Plats //-->
+              <!--/ Slide 1 /-->
+              <div class="resto-slides">
+               <div class="food-menu">
+                  <div class="food-cat plats">PLATS</div>
+               </div><!--// end.foodmenu //-->
+                  <div class="food-menu">
+                     <div class="menu-container">
+                           <div class="menu-wrapper">
+                             <div class="menu-textwrap">
+                                 <div class="menu-name">Filet de boeuf aux herbes</div>
+                                 <div class="menu-details">Accompagné de sa ribambelle de légumes </div>
+                              </div>
+                              <div class="sm-slide">
+                                <div class="sm-price">40&euro;</div>
+                                <div class="sm-icon"><i class="fas fa-check-circle check"></i></div>
+                             </div>
+                        </div><!--// end.wrapper //-->
+                     </div><!--// end.container //-->
+                  </div><!--// end.foodmenu //-->
+               </div><!--// end.slide //-->
+
+              <!--/ Slide 2 /-->               
+               <div class="resto-slides">
+                  <div class="food-menu">
+                     <div class="menu-container">
+                           <div class="menu-wrapper">
+                             <div class="menu-textwrap">
+                                 <div class="menu-name">Parmentier de queue de boeuf</div>
+                                 <div class="menu-details">À la truffe noire sur sa purée de panais </div>
+                              </div>
+                              <div class="sm-slide">
+                                <div class="sm-price">35&euro;</div>
+                                <div class="sm-icon"><i class="fas fa-check-circle check"></i></div>
+                             </div>
+                        </div><!--// end.wrapper //-->
+                     </div><!--// end.container //-->
+                  </div><!--// end.foodmenu //-->
+               </div><!--// end.slide //-->
+
+              <!--/ Slide 3 /-->               
+               <div class="resto-slides">
+                  <div class="food-menu">
+                     <div class="menu-container">
+                           <div class="menu-wrapper">
+                             <div class="menu-textwrap">
+                                 <div class="menu-name">Filet de turbot</div>
+                                 <div class="menu-details">Aux agrumes </div>
+                              </div>
+                              <div class="sm-slide">
+                                <div class="sm-price">44&euro;</div>
+                                <div class="sm-icon"><i class="fas fa-check-circle check"></i></div>
+                              </div>
+                           </div><!--// end.wrapper //-->
+                        </div><!--// end.container //-->
+                     </div><!--// end.foodmenu //-->
+                  </div><!--// end.slide //-->
+            <!--// end.Plats //-->
+            </div>
+            
+            <div class="resto-module">
+            <!--// Desserts //-->
+              <!--/ Slide 1 /-->            
+              <div class="resto-slides">
+               <div class="food-menu">
+                  <div class="food-cat dessert">DESSERTS</div>
+               </div><!--// end.foodmenu //-->
+                  <div class="food-menu">
+                     <div class="menu-container">
+                           <div class="menu-wrapper">
+                             <div class="menu-textwrap">
+                                 <div class="menu-name">Paris-Brest</div>
+                                 <div class="menu-details">Revisité </div>
+                               </div>
+                               <div class="sm-slide">
+                                 <div class="sm-price">18&euro;</div>
+                                 <div class="sm-icon"><i class="fas fa-check-circle check"></i></div>
+                              </div>
+                         </div><!--// end.wrapper //-->
+                     </div><!--// end.container //-->
+                  </div><!--// end.foodmenu //-->
+               </div><!--// end.slide //-->
+
+              <!--/ Slide 2 /-->
+               <div class="resto-slides">
+                  <div class="food-menu">
+                     <div class="menu-container">
+                           <div class="menu-wrapper">
+                             <div class="menu-textwrap">
+                                 <div class="menu-name">Macaron au chocolat d'exception</div>
+                                 <div class="menu-details">Et glace à la vanille de Madagascar </div>
+                               </div>
+                               <div class="sm-slide">
+                                 <div class="sm-price">22&euro;</div>
+                                 <div class="sm-icon"><i class="fas fa-check-circle check"></i></div>
+                              </div>
+                         </div><!--// end.wrapper //-->
+                     </div><!--// end.container //-->
+                  </div><!--// end.foodmenu //-->
+               </div><!--// end.slide //-->
+
+              <!--/ Slide 3 /-->            
+               <div class="resto-slides">
+                  <div class="food-menu">
+                     <div class="menu-container">
+                           <div class="menu-wrapper">
+                             <div class="menu-textwrap">
+                                 <div class="menu-details">Au piment d'Espelette et à la truffe noire </div>
+                                 <div class="menu-name">Mousse au chocolat </div>
+                              </div>
+                               <div class="sm-slide">
+                                 <div class="sm-price">23&euro;</div>
+                                 <div class="sm-icon"><i class="fas fa-check-circle check"></i></div>
+                              </div>
+                           </div><!--// end.wrapper //-->
+                        </div><!--// end.container //-->
+                     </div><!--// end.foodmenu //-->
+                  </div><!--// end.slide //-->
+            <!--// end.Desserts //-->
+               </div>
+
+            </div><!--// end.FULL RESTO //-->
+         </div><!--// end.RESTO WRAPPER //-->
+
+          <!--//********** BOTTOM **********//-->
          <div class="button page">
             <form action="#resto" method="post" target="_self">
                <button class="page" type="submit">Commander</button>
             </form>
          </div>
-      </div>
-      <!--// end.MAIN //-->
+         <!--// end.BOTTOM //-->
+
+      </div><!--// end.MAIN //-->
+
       <!--//********** FOOTER **********//-->
       <footer class="footer">
+       <div class="footer-container">
          <div class="footer-logo"><img src="images/logo/ohmyfood.png" alt="" /></div>
          <div class="footer-content">
             <ul>
@@ -170,7 +259,11 @@
             </ul>
          </div>
          <div class="f-copy">by Stefan MOMIR - Project 3 &copy; 2022</div>
+       </div>
       </footer>
       <!--// end.FOOTER //--> 
+
+   </div><!--// end.MAIN PAGE WRAPPER //--> 
+
    </body>
 </html>
