@@ -261,7 +261,7 @@ figure {
    /* article */
    .article .text-title { justify-content: left; }
 
-    article {
+    div.article {
         box-sizing: border-box;
         margin: 0 15px 0 15px;
         padding: 0;
@@ -318,10 +318,10 @@ figure {
     }
 
     /* article */
-    article {
+    div.article {
         width:100%;
         box-sizing: border-box;
-        margin: 0 15px 0 15px;
+        margin: 0 15px 0 25px;
         padding: 0;
     }
 
